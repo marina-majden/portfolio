@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="" content="" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <div class="logo">
+          <a href="#" class="logo-link">
+            <img src="assets/img/logo.png" alt="" />
+          </a>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li class="nav-link">
+              <a href="#about" class="active">About me</a>
+            </li>
+            <li class="nav-link"><a href="#skills">Skills</a></li>
+            <li class="nav-link"><a href="#projects">Projects</a></li>
+            <li class="nav-link"><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <!-- About/hero section -->
+      <section class="hero-section">
+        <div class="main-content">
+          <h2 class="hero-title">
+            Hi, I'm <span>Marina Majdenić</span>, Frontend / Web / JavaScript
+            developer from Zagreb, Croatia.
+          </h2>
+          <img src="/assets/img/maybe-hero-1.png" alt="hero-section" />
+        </div>
+        <div class="hero-content">
+          <h3>If you need a team player who can...</h3>
+          <ul>
+            <li>create responsive and user-friendly interface</li>
+            <li>design seamleass and visually appealing user experience</li>
+            <li>build responsive and scalabale websites</li>
+            <li>develop dynamic and interactive web applications</li>
+            <li>stay up-to-date with emerging technologies</li>
+            <li>communicate effectively with clients and team members</li>
+            <li>and do many other job-related tasks</li>
+          </ul>
+          <h3>...check me out or contact me right here:</h3>
+          <button>Show me more!</button>
+          <button>Let's get in touch!</button>
+          <h3>or have fun and scroll down!</h3>
+        </div>
+      </section>
+      <!-- Skills section -->
+      <section class="skills">
+        <h2 class="title">Skills / Competencies</h2>
+        <p class="text">
+          I'm a front-end developer with a passion for creating refined
+          user-friendly web experiences with a focus on animated, responsive,
+          and interactive content.
+        </p>
+        <h3 class="main">Joining the forces of</h3>
+        <img src="https://img.icons8.com/nolan/64/html-5.png" alt="html-5" />
+        <img src="https://img.icons8.com/nolan/64/css3.png" alt="css3" />
+        <img
+          src="https://img.icons8.com/nolan/64/javascript.png"
+          alt="JavaScript"
+        />
+        <img
+          src="https://img.icons8.com/nolan/64/react-native.png"
+          alt="ReactJS"
+        />
+        <h3 class="content">to create</h3>
+        <ul>
+          <li>responsive user-interface design</li>
+          <li>cross-browser compatibility</li>
+          <li>single page applications</li>
+          <li>web performance optimization</li>
+          <li>web-accessibility</li>
+          <li>version control systems</li>
+          <li>scalable web development</li>
+          <li>back-end database integration</li>
+          <li>third party API integration</li>
+        </ul>
+
+        <div class="container">
+          <i class="fa-solid fa-brands fa-html5"></i>
+          <i class="fa-solid fa-brands fa-css3"></i>
+          <i class="fa-solid fa-brands fa-js"></i>
+          <i class="fa-solid fa-brands fa-react"></i>
+          <i class="fa-solid fa-brands fa-sass"></i>
+          <i class="fa-solid fa-brands fa-node-js"></i>
+          <i class="fa-solid fa-brands fa-bootstrap"></i>
+          <i class="fa-solid fa-brands fa-npm"></i>
+          <i class="fa-solid fa-brands fa-git-alt"></i>
+        </div>
+      </section>
+      <!-- Projects section -->
+      <section class="projects" id="projects">
+        <div class="projects-new">
+          <div class="projects-card">
+            <div class="card-img">
+              <img src="https://picsum.photos/id/1076/600/400" alt="" />
+            </div>
+
+            <h3>Project 1</h3>
+            <p>
+              Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+              sodales pellentesque elementum.
+            </p>
+            <button class="card">GitHub</button>
+            <button class="card">Demo</button>
+          </div>
+          <div class="projects-card">
+            <div class="card-img">
+              <img src="https://picsum.photos/id/1081/600/400" alt="" />
+            </div>
+
+            <h3>Project 2</h3>
+            <p>
+              Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+              sodales pellentesque elementum.
+            </p>
+            <button class="card">GitHub</button>
+            <button class="card">Demo</button>
+          </div>
+          <div class="projects-card">
+            <div class="card-img">
+              <img src="https://picsum.photos/id/743/600/400" alt="" />
+            </div>
+
+            <h3>Project 3</h3>
+            <p>
+              Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+              sodales pellentesque elementum.
+            </p>
+            <button class="card">GitHub</button>
+            <button class="card">Demo</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact">
+        <div class="contact-form" id="contact-form">
+          <h3 class="title">Contact</h3>
+          <p>Lets get in touch and talk about your next project.</p>
+          <hr />
+          <form action="/action_page.php" target="_blank">
+            <input
+              class="contact name"
+              type="text"
+              placeholder="Name"
+              required
+              name="Name"
+            />
+            <br />
+            <input
+              class="contact email"
+              type="text"
+              placeholder="Email"
+              required
+              name="Email"
+            />
+            <br />
+            <input
+              class="contact subject"
+              type="text"
+              placeholder="Subject"
+              required
+              name="Subject"
+            />
+            <br />
+            <input
+              class="contact message"
+              type="textarea"
+              placeholder="Enter your message here..."
+              required
+              name="Message"
+            />
+            <br />
+            <button class="contact button" type="submit">
+              <i class="fa-solid fa-angrycreative"></i> Send message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer id="#footer" class="footer">
+      <a href="#" class="to-top">
+        To the top <i class="fa-solid fa-arrow-up"></i>
+      </a>
+      <div class="social-links">
+        <i class="fa-regular fa-2xl fa-brands fa-github-square social-icon"></i>
+        <i class="fa-solid fa-brands fa-linkedin-square social-icon"></i>
+        <i class="fa-solid fa-brands fa-google-plus-square social-icon"></i>
+      </div>
+      <div class="copyright">
+        <p class="center">
+          Copyright <i class="fa-solid fa-copyright"></i> Marina Majdenić
+          <br />
+          2023.
+        </p>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/677ac239ea.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
