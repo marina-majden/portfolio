@@ -1,5 +1,71 @@
-@import url("/assets/css/variables.css");
 @import url("/assets/css/fonts.css");
+
+:root {
+  /* As RGBa codes */
+
+  --rgba-primary-0: rgba(152, 17, 78, 1); /* Main Primary color */
+  --rgba-primary-1: rgba(218, 120, 165, 1);
+  --rgba-primary-2: rgba(184, 54, 113, 1);
+  --rgba-primary-3: rgba(114, 0, 52, 1);
+  --rgba-primary-4: rgba(62, 0, 28, 1);
+
+  --rgba-secondary-1-0: rgba(16, 89, 113, 1); /* Main Secondary color (1) */
+  --rgba-secondary-1-1: rgba(96, 150, 169, 1);
+  --rgba-secondary-1-2: rgba(43, 114, 137, 1);
+  --rgba-secondary-1-3: rgba(3, 64, 84, 1);
+  --rgba-secondary-1-4: rgba(1, 35, 46, 1);
+
+  --rgba-secondary-2-0: rgba(61, 24, 123, 1); /* Main Secondary color (2) */
+  --rgba-secondary-2-1: rgba(136, 108, 182, 1);
+  --rgba-secondary-2-2: rgba(90, 53, 149, 1);
+  --rgba-secondary-2-3: rgba(39, 7, 92, 1);
+  --rgba-secondary-2-4: rgba(20, 2, 50, 1);
+
+  /* As hex codes */
+
+  --color-primary-300: #98114e; /* Main Primary color */
+  --color-primary-100: #da78a5;
+  --color-primary-200: #b83671;
+  --color-primary-400: #720034;
+  --color-primary-500: #3e001c;
+
+  --color-secondary-300: #105971; /* Main Secondary color (1) */
+  --color-secondary-100: #6096a9;
+  --color-secondary-200: #2b7289;
+  --color-secondary-400: #034054;
+  --color-secondary-500: #01232e;
+
+  --color-secondary-300: #3d187b; /* Main Secondary color (2) */
+  --color-secondary-100: #886cb6;
+  --color-secondary-200: #5a3595;
+  --color-secondary-400: #27075c;
+  --color-secondary-500: #140232;
+
+  /* As grayscale codes */
+
+  --clr-grey-100: #9a8a91; /* Main Primary color */
+  --clr-grey-200: #77696f;
+  --clr-grey-300: #5b4e54;
+  --clr-grey-400: #332c2f;
+  --clr-grey-500: #1b1a1b;
+
+  --clr-greys-110: #9b9d9e; /* Main Secondary color (1) */
+  --clr-greys-210: #808181;
+  --clr-greys-310: #595c5d;
+  --clr-greys-410: #363839;
+  --clr-greys-500: #202121;
+
+  --clr-greys-120: #b0adb3; /* Main Secondary color (2) */
+  --clr-greys-220: #8f8c93;
+  --clr-greys-320: #6b686e;
+  --clr-greys-420: #464448;
+  --clr-greys-520: #2c2b2e;
+
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  --box-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  --box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  --box-shadow-inset: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+}
 
 *,
 *::before,
