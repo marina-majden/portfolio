@@ -202,6 +202,21 @@ h2 {
   padding: 1rem 2rem;
   text-align: center;
 }
+h3 {
+  font-size: 1.6rem;
+  line-height: 1;
+  font-weight: 500;
+  color: var(--clr-third-100);
+  font-family: var(--ff-font-mono), sans-serif;
+  text-align: center;
+  border-right: 5px solid #f4f1f1;
+  border-left: 5px solid #f4f1f1;
+  border-radius: 50% 50%;
+  opacity: 60%;
+  cursor: alias;
+  padding: 0.2rem 3rem 0 3rem;
+  margin: auto;
+}
 
 p {
   font-family: var(--ff-font-sans);
