@@ -1,20 +1,19 @@
 @import url("/assets/css/fonts.css");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,500;0,6..12,700;0,6..12,900;1,6..12,400;1,6..12,500;1,6..12,700;1,6..12,900&family=Rock+Salt&family=Silkscreen:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Yanone+Kaffeesatz:wght@200;300;400&display=swap");
 
 :root {
-  /* As RGBa codes */
-
+  /* ======== As RGBa codes ========== */
   --rgba-primary-0: rgba(152, 17, 78, 1); /* Main Primary color */
   --rgba-primary-1: rgba(218, 120, 165, 1);
   --rgba-primary-2: rgba(184, 54, 113, 1);
   --rgba-primary-3: rgba(114, 0, 52, 1);
   --rgba-primary-4: rgba(62, 0, 28, 1);
-
   --rgba-secondary-1-0: rgba(16, 89, 113, 1); /* Main Secondary color (1) */
   --rgba-secondary-1-1: rgba(96, 150, 169, 1);
   --rgba-secondary-1-2: rgba(43, 114, 137, 1);
   --rgba-secondary-1-3: rgba(3, 64, 84, 1);
   --rgba-secondary-1-4: rgba(1, 35, 46, 1);
-
   --rgba-secondary-2-0: rgba(61, 24, 123, 1); /* Main Secondary color (2) */
   --rgba-secondary-2-1: rgba(136, 108, 182, 1);
   --rgba-secondary-2-2: rgba(90, 53, 149, 1);
@@ -23,50 +22,74 @@
 
   /* As hex codes */
 
-  --color-primary-300: #98114e; /* Main Primary color */
-  --color-primary-100: #da78a5;
-  --color-primary-200: #b83671;
-  --color-primary-400: #720034;
-  --color-primary-500: #3e001c;
+  --clr-primary-300: #98114e; /* Main Primary color */
+  --clr-primary-100: #da78a5;
+  --clr-primary-200: #b83671;
+  --clr-primary-400: #720034;
+  --clr-primary-500: #3e001c;
 
-  --color-secondary-300: #105971; /* Main Secondary color (1) */
-  --color-secondary-100: #6096a9;
-  --color-secondary-200: #2b7289;
-  --color-secondary-400: #034054;
-  --color-secondary-500: #01232e;
+  --clr-second-300: #105971; /* Main Secondary color (1) */
+  --clr-second-100: #6096a9;
+  --clr-second-200: #2b7289;
+  --clr-second-400: #034054;
+  --clr-second-500: #01232e;
 
-  --color-secondary-300: #3d187b; /* Main Secondary color (2) */
-  --color-secondary-100: #886cb6;
-  --color-secondary-200: #5a3595;
-  --color-secondary-400: #27075c;
-  --color-secondary-500: #140232;
+  --clr-third-300: #3d187b; /* Main Secondary color (2) */
+  --clr-third-100: #886cb6;
+  --clr-third-200: #5a3595;
+  --clr-third-400: #27075c;
+  --clr-third-500: #140232;
+
+  /* darkest variations */
+  --clr-primary-900: #110008;
+  --clr-second-900: #001117;
+  --clr-third-900: #0a0019;
 
   /* As grayscale codes */
 
-  --clr-grey-100: #9a8a91; /* Main Primary color */
+  --clr-grey-100: #9a8a91; /* Warmer greys */
   --clr-grey-200: #77696f;
   --clr-grey-300: #5b4e54;
   --clr-grey-400: #332c2f;
   --clr-grey-500: #1b1a1b;
 
-  --clr-greys-110: #9b9d9e; /* Main Secondary color (1) */
+  --clr-greys-110: #9b9d9e; /* Dimmer greys */
   --clr-greys-210: #808181;
   --clr-greys-310: #595c5d;
   --clr-greys-410: #363839;
   --clr-greys-500: #202121;
 
-  --clr-greys-120: #b0adb3; /* Main Secondary color (2) */
+  --clr-greys-120: #b0adb3; /* Colder greys */
   --clr-greys-220: #8f8c93;
   --clr-greys-320: #6b686e;
   --clr-greys-420: #464448;
   --clr-greys-520: #2c2b2e;
 
+  --clr-whites-100: #c6c5c7; /* Colder greys */
+  --clr-whites-200: #cdcbd2;
+  --clr-whites-300: #dbd8df;
+  --clr-whites-400: #edebee;
+  --clr-whites-500: #fefdff;
+
   --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   --box-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
   --box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
   --box-shadow-inset: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+
+  --ff-heading-1: "Bungee", sans-serif;
+  --ff-heading-2: "Rock Salt", sans-serif;
+  --ff-font-condensed: "Yanone Kaffeesatz", serif;
+  --ff-font-sans: "Nunito Sans", sans-serif;
+  --ff-font-mono: "Silkscreen", sans-serif;
+
+  /* VARIABLES FOR DARK THEME / FIRST DESIGN */
+  --clr-text: var(--clr-whites-100);
+  --clr-bg: var(--clr-second-900);
+  --ff-text: var(--ff-font-condensed);
+  --ff-heading: var(--ff-heading-1);
 }
 
+/*    BASE CSS    */
 *,
 *::before,
 *::after {
@@ -88,6 +111,7 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
+  text-wrap: balance;
 }
 a,
 a:link,
@@ -98,12 +122,28 @@ a:focus {
   text-decoration: none;
 }
 
+input:focus,
+input:active,
+input:hover {
+  outline: none;
+}
+input:disabled {
+  cursor: not-allowed;
+}
+img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+}
+
+/* BUTTONS */
+
 button {
   display: inline-block;
-  background-color: var(--grayscale-gs-white);
-  border: 1px solid var(--grayscale-gs-tetriary-2);
+  background-color: var(--clr-grey-400);
+  border: 1px solid var(--clr-grey-500);
   border-radius: 0.25rem;
-  color: var(--grayscale-gs-primary);
+  color: var(--clr-greys-110);
   cursor: pointer;
   font-size: 1rem;
   font-weight: 600;
@@ -117,30 +157,57 @@ button {
 }
 button:hover,
 button:active {
-  background-color: var(--grayscale-gs-quarterly-1);
-  border: 1px solid var(--grayscale-gs-tetriary-1);
-  color: var(--grayscale-gs-primary);
+  background-color: var(--clr-grey-100);
+  border: 1px solid var(--clr-grey-300);
+  color: var(--clr-grey-500);
   transition: 0.2s ease-in-out;
 }
 button:disabled {
-  background-color: var(--grayscale-gs-quarterly-2);
-  border: 1px solid var(--grayscale-gs-quarterly-2);
-  color: var(--grayscale-gs-secondary-1);
+  background-color: var(--clr-grey-100);
+  border: 1px solid var(--clr-greys-110);
+  color: var(--clr-greys-120);
   cursor: not-allowed;
   transition: 0.2s ease-in-out;
 }
 button:focus {
   outline: none;
 }
-input:focus,
-input:active,
-input:hover {
-  outline: none;
+
+/* GENERAL STYLING */
+
+body {
+  background-color: var(--clr-bg);
+  color: var(--clr-text);
+  font-family: var(--ff-text);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  text-align: left;
 }
-input:disabled {
-  cursor: not-allowed;
+h1 {
+  font-family: var(--ff-heading);
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 1rem 2rem;
+  text-align: center;
 }
-img {
-  max-width: 100vw;
-  height: auto;
+h2 {
+  font-family: var(--ff-heading);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+p {
+  font-family: var(--ff-font-sans);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 1rem 2rem;
+  text-align: justify;
 }
