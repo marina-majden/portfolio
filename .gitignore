@@ -401,3 +401,11 @@ FodyWeavers.xsd
 
 maybe/
 maybe*
+test*
+test/
+template*
+template/
+blog/
+csss/
+jss/
+imgg/
