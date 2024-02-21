@@ -1,192 +1,343 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Site is being updated!</title>
-    <style>
-      @keyframes animate-columns {
-        0% {
-          grid-template-columns: 17vmin 8vmin 5vmin 7vmin 10vmin 15vmin 15vmin;
-          grid-template-rows: 4vmin 9vmin 15vmin 7vmin 13vmin 8vmin 5vmin;
-        }
-        25% {
-          grid-template-columns: 10vmin 8vmin 15vmin 5vmin 7vmin 15vmin 17vmin;
-          grid-template-rows: 15vmin 4vmin 7vmin 8vmin 5vmin 13vmin 9vmin;
-        }
-        50% {
-          grid-template-columns: 15vmin 10vmin 17vmin 5vmin 7vmin 15vmin 8vmin;
-          grid-template-rows: 4vmin 9vmin 5vmin 13vmin 7vmin 8vmin 15vmin;
-        }
-        75% {
-          grid-template-columns: 8vmin 5vmin 7vmin 15vmin 17vmin 15vmin 10vmin;
-          grid-template-rows: 13vmin 4vmin 15vmin 9vmin 5vmin 7vmin 8vmin;
-        }
-        100% {
-          grid-template-columns: 10vmin 8vmin 5vmin 7vmin 15vmin 15vmin 17vmin;
-          grid-template-rows: 4vmin 15vmin 9vmin 7vmin 8vmin 5vmin 13vmin;
-        }
-      }
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Marina Majdenić {Portfolio} Web-site</title>
 
-      .grid {
-        display: grid;
-        gap: 2vmin;
-        padding: 2vmin;
-        grid-template-columns: 17vmin 8vmin 5vmin 7vmin 10vmin 15vmin 15vmin;
-        grid-template-rows: 4vmin 9vmin 15vmin 7vmin 13vmin 8vmin 5vmin;
-        align-items: stretch;
-        justify-items: stretch;
-        background: #333;
+    <!-- CSS  -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="/assets/css/materialize.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
+    <link rel="stylesheet" href="/assets/icons/css/all.css" />
+    <link rel="stylesheet" href="/assets/icons/css/brands.css" />
+    <link rel="stylesheet" href="/assets/icons/css/svg-with-js.css" />
+    <link rel="stylesheet" href="/assets/icons/css/fontawesome.css" />
 
-        animation: animate-columns 30s ease-in-out infinite alternate;
-      }
-
-      .grid > * {
-        width: 100%;
-        background: rgb(0 0 0);
-
-        --light1: #e5eeeb;
-        --light2: #f2e7d5;
-        --light3: #fcfde7;
-        --light4: #dfe5d0;
-        --light5: #e3ded9;
-        --yellow1: #f2c968;
-        --yellow2: #edcc6b;
-        --red1: #d62d24;
-        --red2: #d73630;
-        --dark1: #130409;
-        --dark2: #0b0205;
-        --dark3: #c0bfba;
-        --blue: #241785;
-      }
-
-      .grid > :nth-child(1n) {
-        background: var(--light1);
-      }
-      .grid > :nth-child(2n) {
-        background: var(--light2);
-      }
-      .grid > :nth-child(3n) {
-        background: var(--yellow1);
-      }
-      .grid > :nth-child(4n) {
-        background: var(--light5);
-      }
-
-      .grid > :nth-child(1) {
-        background: var(--red1);
-      }
-      .grid > :nth-child(2) {
-        grid-column: span 2;
-        background: var(--light3);
-      }
-      .grid > :nth-child(5) {
-        grid-column: span 2;
-        grid-row: span 3;
-        background: var(--yellow1);
-      }
-      .grid > :nth-child(9),
-      .grid > :nth-child(13) {
-        grid-row: span 2;
-        background: var(--yellow2);
-      }
-      .grid > :nth-child(7) {
-        grid-column: span 3;
-        grid-row: span 2;
-        background: var(--blue);
-      }
-      .grid > :nth-child(8) {
-        background: var(--dark3);
-      }
-      .grid > :nth-child(9) {
-        background: var(--light5);
-      }
-      .grid > :nth-child(10) {
-        grid-column: span 3;
-        grid-row: span 4;
-        background: var(--light1);
-      }
-      .grid > :nth-child(12),
-      .grid > :nth-child(17) {
-        grid-row: span 2;
-      }
-      .grid > :nth-child(14),
-      .grid > :nth-child(6) {
-        grid-row: span 3;
-        background: var(--light3);
-      }
-      .grid > :nth-child(16) {
-        background: var(--red2);
-      }
-      .grid > :nth-child(18) {
-        background: var(--dark1);
-      }
-
-      html,
-      body {
-        height: 100%;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        background: #fcfcfc;
-      }
-
-      body {
-        display: grid;
-        place-content: center;
-        text-align: center;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-          "Segoe UI Symbol";
-      }
-
-      .warning {
-        display: none;
-      }
-    </style>
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+    <link rel="stylesheet" href="/assets/css/base.css" />
+    <link
+      href="/assets/css/style.css"
+      type="text/css"
+      rel="stylesheet"
+      media="screen,projection"
+    />
   </head>
   <body>
-    <h1>Animated Mondrian</h1>
-    <div class="grid">
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
+    <div class="main-container">
+      <!--<div class="logo" href="#">
+        <img src="/assets/img/logo-white.png" alt="logo" />
+      </div>--->
+      <!=============== PARALLAX ================>
+      <div class="parallax-header">
+        <img src="/assets/img/sci-fi-city-3.jpg" class="background" />
+        <img src="/assets/img/woman-futuristic-office.png" class="foreground" />
+
+        <h1>Hello, world! <br /><sub>Welcome to my website!</sub></h1>
+      </div>
+      <!=============== MAIN ================>
+      <main>
+        <ul!=============== LOGO & NAVBAR ================>
+
+        <nav class="main-navbar">
+          <ul class="right hide-on-small">
+            <li><a href="#">Home</a></li>
+            <li><a href="#hero">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="sidebar">
+          <ul id="nav-mobile" class="sidenav hide-on-med-and-up">
+            <li><a href="#">Home</a></li>
+            <li><a href="#hero">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"
+          ><i class="material-icons">menu</i></a
+        >
+
+        <div!=============== HERO / ABOUT ================>
+        <section class="hero" id="#hero">
+          <div class="wrapper">
+            <h2 class="section-title">
+              I am <span>Marina Majdenić</span>, Front-end developer from Zagreb
+              (Croatia), former highschool teacher and language and literature
+              professor.
+            </h2>
+            <details>
+              <summary>
+                Click here if you're in the mood for a little storytime...
+              </summary>
+              <h3 class="text-teal">
+                Since I was a kid, I was amazed by all of magnificient things
+                people were able to create. Of course, children are more
+                impressed with the imaginary worlds depicted in books and
+                movies, than the real world outside, and I was no different. I
+                was going through books and movies, daydreaming and building
+                whole different universes in my mind, never imagining that it be
+                possible to experience something that far out of the ordinary in
+                our lifetime.
+              </h3>
+              <h3 class="text-pink">
+                But, the technology developed so rapidly, and just as I was
+                leaving my childhood and coming into adulthood, it became so
+                refined and good in creating new life experiences so that today
+                it is almost indistinguishable from eality. A bit frightening,
+                but that's why we should all be familiar with the way it works
+                and educated in the ways of using it. That way we can make sure
+                it's used for good causes and never misused.
+              </h3>
+              <h3 class="text-blue">
+                My wish and goal is to be one of the people that use the
+                technology as a way of helping people and creating better
+                society, responsible and caring, but also as a way of making
+                imagination into reality, creating and building new world,
+                accessible and at help to everyone.
+              </h3>
+              <img src="/assets/img/maybe-hero-4.jpg" alt="hero-bg" />
+            </details>
+          </div>
+          <div class="hero-list-wrapper">
+            <div class="before-list">
+              <h4>If you need someone to...</h4>
+            </div>
+
+            <div class="hero-list">
+              <ul role="list">
+                <li>create interactive and intuitive UX</li>
+                <li>design animated and pretty UI</li>
+                <li>build responsive and scalabale websites</li>
+                <li>develop interactive web apps</li>
+                <li>stay up-to-date with new technologies</li>
+                <li>communicate effectively and happily</li>
+                <li>do many other job-related tasks</li>
+              </ul>
+            </div>
+          </div>
+          <div class="wrapper">
+            <button href="#contact" class="btn-large">Contact Me</button>
+          </div>
+        </section>
+        <!=============== SKILLS ================>
+        <section class="skills" id="skills">
+          <div class="wrapper">
+            <h2>Skills</h2>
+            <p>
+              For front-end development, I like to use traditional
+              building-tools:
+            </p>
+            <div class="row">
+              <div class="col s12 m6 l3">
+                <div class="icon-block">
+                  <img
+                    class="center-align"
+                    src="https://img.icons8.com/nolan/128/html-5.png"
+                    alt="html-5"
+                  />
+                </div>
+                <p class="center-align white-text">
+                  HTML still going strong, building our content in strong and
+                  logical structure.
+                </p>
+              </div>
+              <div class="col s12 m6 l3">
+                <div class="icon-block">
+                  <img
+                    src="https://img.icons8.com/nolan/128/css3.png"
+                    alt="css3"
+                    class="center-align"
+                  />
+                  <p class="center-align white-text">
+                    Css has never been more powerful!
+                  </p>
+                </div>
+              </div>
+              <div class="col s12 m6 l3">
+                <div class="icon-block center-align">
+                  <img
+                    src="https://img.icons8.com/nolan/128/javascript.png"
+                    alt="JavaScript"
+                  />
+                  <p class="center-align white-text">
+                    JavaScript is the one here making magic and bringing things
+                    to life.
+                  </p>
+                </div>
+              </div>
+              <div class="col s12 m6 l3">
+                <div class="icon-block center-align">
+                  <img
+                    src="https://img.icons8.com/nolan/128/react-native.png"
+                    alt="ReactJS"
+                  />
+                  <p class="center-align white-text">
+                    React, for a modern and flexible customization of every
+                    project
+                  </p>
+                </div>
+              </div>
+            </div>
+            <i class="fa-solid fa-3x fa-brands fa-node-js"></i>
+            <i class="fa-solid fa-3x fa-brands fa-npm"></i>
+            <i class="fa-solid fa-3x fa-brands fa-sass"></i>
+            <i class="fa-solid fa-3x fa-brands fa-netlify"></i>
+            <i class="fa-solid fa-3x fa-brands fa-git"></i>
+            <i class="fa-solid fa-3x fa-brands fa-github"></i>
+          </div>
+        </section>
+        <!=============== PROJECTS ================>
+        <section class="projects" id="projects">
+          <h2>Projects</h2>
+          <p>
+            Here are showcased some of my projects. Please feel free to try them
+            out by clicking the "Demo" button or check out the code and source
+            on their GitHub pages!
+          </p>
+          <div class="project-cards">
+            <!=============== PROJECT ONE ===============>
+            <div class="project-card">
+              <div class="image-text">
+                <details>
+                  <summary>Quizz App</summary>
+                  <p class="project-info">
+                    It's about wisdom, knowledge, and learning... And
+                    competition, of course. Set up game with your family and
+                    beat them to the ground because we only have 20 questions in
+                    the app base so you could definitely learn them beforehand.
+                  </p>
+                </details>
+                <img
+                  src="/assets/img/quiz-app.png"
+                  alt="screenshot-quizz-app"
+                />
+              </div>
+              <div class="card-banner">
+                <label for="code">Check out the source code:</label>
+                <button type="button" id="codeQuizBtn" class="card">
+                  GitHub</button
+                ><br />
+                <label for="demo">Experience the project here:</label>
+                <button type="button" id="demoQuizBtn" class="card">
+                  Demo
+                </button>
+              </div>
+            </div>
+            <!=============== PROJECT TWO ================>
+            <div class="project-card">
+              <div class="image-text">
+                <details>
+                  <summary>Song Finder App</summary>
+                  <p class="project-info">
+                    As you guessed correctly, it's an app that helps you find a
+                    song on the iTunes, if you know what you're looking for. Or
+                    if you don't, maybe you will find something nice, and you
+                    can listen a sample for free.
+                  </p>
+                </details>
+                <img
+                  src="/assets/img/song-finder.png"
+                  alt="screenshot-itunes-app"
+                />
+              </div>
+              <div class="card-banner">
+                <label for="code">Check out the source code:</label>
+                <button id="codeiTunesBtn" class="card">GitHub</button><br />
+                <label for="demo">Experience the project here::</label>
+                <button id="demoiTunesBtn" class="card">Demo</button>
+              </div>
+            </div>
+            <!=============== PROJECT THREE ================>
+            <div class="project-card">
+              <div class="image-text">
+                <details>
+                  <summary>Chat App</summary>
+                  <p class="project-info">
+                    Simple, fast, versatile and privacy friendly, this app
+                    enables you to access chat-window and talk to your friends
+                    anywhere and anytime in a matter of seconds. Creative and
+                    session-based usernames guarantee your privacy.
+                  </p>
+                </details>
+                <img src="/assets/img/chat-app.png" alt="screenshot-chat-app" />
+              </div>
+              <div class="card-banner">
+                <label for="code">Check out the source code:</label>
+                <button id="codeChatBtn" class="card">GitHub</button><br />
+                <label for="demo">Experience the project here:</label>
+                <button id="demoChatBtn" class="card">Demo</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!=============== CONTACT ================>
+        <section class="contact" id="contact">
+          <div class="container">
+            <h2>Contact</h2>
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input
+                type="hidden"
+                name="access_key"
+                value="d84c9554-a339-41d0-b6b6-1a9b29e4df70"
+              />
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  cols="40"
+                  rows="10"
+                  required
+                  user-scalable="false"
+                ></textarea>
+              </div>
+              <button class="btn" type="submit">Send</button>
+            </form>
+          </div>
+        </section>
+        <!=============== FOOTER ================>
+        <footer class="footer m6 no-pad-bod">
+          <div class="socials">
+            <h4>Be my friend:</h4>
+            <i class="fa-brands fa-3x fa-square-github fa-spin"></i>
+            <i class="fa-brands fa-3x fa-linkedin-in fa-flip"></i>
+            <i class="fa-brands fa-3x fa-google-plus-square fa-bounce"></i>
+            <i class="fa-brands fa-3x fa-medium fa-beat"></i>
+          </div>
+          <div class="copyright">
+            <p>
+              Copyright
+              <i class="fa-solid fa-copyright fa-2x w3-hover-opacity"></i>
+              Marina Majdenić <br />
+              2023.
+            </p>
+          </div>
+        </footer>
+      </main>
     </div>
-    <div class="warning">
-      <p>
-        ℹ️ You are using Chrome but need at least version 107 to check this demo
-      </p>
-    </div>
-    <script>
-      const showWarningInChromiumWithNoSupport = () => {
-        if (!navigator.userAgentData || !navigator.userAgentData.brands) return;
-
-        const chromium = navigator.userAgentData.brands.filter(
-          (b) => b.brand == "Chromium"
-        );
-        if (!chromium) return;
-
-        if (chromium[0].version >= 107) return;
-        document.querySelector(".warning").style.display = "block";
-      };
-
-      showWarningInChromiumWithNoSupport();
-    </script>
+    <!-- JS files -->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="/assets/js/init.js"></script>
+    <script src="/assets/js/materialize.js"></script>
+    <script src="/assets/js/script.js"></script>
   </body>
 </html>

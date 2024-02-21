@@ -4,17 +4,31 @@
 
 /* =============== VARIABLES =============== */
 :root {
-  --font-text-primary: "Nunito Sans", sans-serif;
-  --font-cursive: "Rock Salt", cursive;
-  --font-headings: "Silkscreen", sans-serif;
-  --font-headings-secondary: "Bungee", sans-serif;
-  --font-text-secondary: "Yanone Kaffeesatz", sans-serif;
-  --font-text-body: "Roboto", sans-serif;
+  --font-text-1: "Nunito Sans", fantasy;
+  --font-2: "Rock Salt", cursive;
+  --font-3: "Silkscreen", fantasy;
+  --font-4: "Bungee", fantasy;
+  --font-head-4: "Yanone Kaffeesatz", fantasy;
+  --font-text-3: "Roboto", fantasy;
+  --font-7: "Pricedown", fantasy;
+  --font-8: "Bespoke", fantasy;
+  --font-9: "Funtauna", fantasy;
+  --font-text-2: "Dosis", fantasy;
+  --font-11: "Drexs", fantasy;
+  --font-text-4: "Fira Code", fantasy;
+  --font-13: "Fira Code VF", fantasy;
+  --font-14: "Poppins", fantasy;
+  --font-head-2: "Queensides", fantasy;
+  --font-head-3: "Kalnia VF", fantasy;
+  --font-17: "Newsreader", fantasy;
+  --font-head-1: "Syne", fantasy;
 }
+
+/* =============== FONTS =============== */
 
 @font-face {
   font-family: "Pricedown";
-  src: url("/assets/fonts/Pdown/Pdown.otf") format("embedded-opentype");
+  src: url("/assets/fonts/Pdown/Pdown.otf") format("opentype");
 }
 @font-face {
   font-family: "Bespoke";
@@ -100,4 +114,149 @@
   text-rendering: optimizeLegibility; /* Force ligatures for Webkit, Blink, Gecko */
   white-space: pre-wrap;
   word-break: break-all;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(/assets/fonts/poppins/Poppins-Thin.ttf) format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/poppins/Poppins-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/poppins/Poppins-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/poppins/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/poppins/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/poppins/Poppins-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/poppins/Poppins-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/poppins/Poppins-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(/assets/fonts/poppins/Poppins-ThinItalic.ttf) format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/poppins/Poppins-ExtraLightItalic.ttf")
+    format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/poppins/Poppins-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/poppins/Poppins-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/poppins/Poppins-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/poppins/Poppins-SemiBoldItalic.ttf")
+    format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/poppins/Poppins-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/poppins/Poppins-ExtraBoldItalic.ttf")
+    format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/fonts/poppins/Poppins-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Queensides";
+  src: url(/assets/fonts/queensides-font/Queensides-3z7Ey.ttf)
+    format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Queensides";
+  src: url(/assets/fonts/queensides-font/QueensidesLight-ZVj3l.ttf)
+    format("truetype");
+  font-weight: 200;
+}
+@font-face {
+  font-family: "Queensides";
+  src: url(/assets/fonts/queensides-font/QueensidesMedium-x30zV.ttf)
+    format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Kalnia VF";
+  src: url(/assets/fonts/Kalnia-VariableFont_wdth\,wght.ttf) format("truetype");
+  font-weight: 1 1000;
+}
+@font-face {
+  font-family: "Newsreader";
+  src: url(/assets/fonts/Newsreader-VariableFont_opsz\,wght.ttf)
+    format("truetype");
+  font-weight: 1 1000;
+}
+@font-face {
+  font-family: "Syne";
+  src: url(/assets/fonts/Syne-VariableFont_wght.ttf) format("truetype");
+  font-weight: 1 1000;
 }

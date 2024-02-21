@@ -1,5 +1,3 @@
-@import url("/assets/css/fonts.css");
-
 :root,
 [color-scheme="light"] {
   /* RAINBOW - BASIC PALETTE*/
@@ -158,12 +156,4 @@
   --focus-ring-width: 0.25rem;
   --focus-ring-opacity: 0.25;
   --focus-ring-color: rgba(111, 66, 193, 0.25);
-  --font-1: "Pricedown", "Comic Sans MS", cursive, sans-serif;
-  --font-2: "Drexs", "Comic Sans MS", cursive, sans-serif;
-  --font-3: "Fira Code", "Comic Sans MS", cursive, sans-serif;
-  --font-4: "Fira Code VF", "Comic Sans MS", cursive, sans-serif;
-  --font-5: "Bespoke", "Comic Sans MS", cursive, sans-serif;
-  --font-6: "Dosis", "Comic Sans MS", cursive, sans-serif;
-  --font-7: "Dosis", "Comic Sans MS", cursive, sans-serif;
-  --font-8: "Dosis", "Comic Sans MS", cursive, sans-serif;
 }

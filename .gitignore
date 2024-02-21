@@ -400,7 +400,6 @@ FodyWeavers.xsd
 # MY FILES
 
 maybe/
-maybe*
 test*
 test/
 template*
@@ -409,3 +408,4 @@ blog/
 csss/
 jss/
 imgg/
+fontss/
