@@ -1,0 +1,304 @@
+/* Fixed colors that don't get transition/animation */
+ :root {
+	 --dark-cosmos-color: #1f1122;
+	 --star-color: #f3ebfa;
+	 --t-sun-color: #fff2c2;
+	 --t-moon-color: #f2e1fe;
+	 --t-moon-pattern-color: #e5d3f3;
+	/* colorz that will change on transition */
+	 --circle-bg-color: #fdae68;
+	 --cactus-body-color: #662940;
+	 --cactus-flower-color: #ec5170;
+	 --mountain-color: #b64962;
+	 --sand-01-color: #772240;
+	 --sand-02-color: #992455;
+	 --sand-03-color: #942e53;
+	 --sand-04-color: #ba4574;
+	/* animation and transition timings */
+	 --t-slow: 2600ms;
+	 --t-med: 1600ms;
+	 --t-fast: 1200ms;
+	 --t-delay-motionpath: 1200ms;
+	 --t-delay-colorfades: 200ms;
+}
+/* This is the code for the CSS transition demo */
+ .svg-mask-transition {
+	 clip-path: url(#clip-path);
+}
+/* Colors that do not transition */
+ .sun-center, .sun-shadow-01, .sun-shadow-02, .cloud {
+	 fill: var(--t-sun-color);
+}
+ .sun-shadow-01 {
+	 opacity: 0.3;
+}
+ .sun-shadow-02 {
+	 opacity: 0.2;
+}
+/* for both moons */
+ .moon-center, .moon-shadow-01, .moon-shadow-02 {
+	 fill: var(--t-moon-color);
+}
+ .moon-shadow-01 {
+	 opacity: 0.1;
+}
+ .moon-shadow-02 {
+	 opacity: 0.1;
+}
+ .moon-pattern {
+	 fill: var(--t-moon-pattern-color);
+}
+/* Colors that will transition */
+ .circle-bg {
+	 fill: var(--circle-bg-color);
+}
+ .cactus-body {
+	 fill: var(--cactus-body-color);
+}
+ .cactus-flower {
+	 fill: var(--cactus-flower-color);
+}
+ .mountain {
+	 fill: var(--mountain-color);
+}
+ .sand-01 {
+	 fill: var(--sand-01-color);
+}
+ .sand-02 {
+	 fill: var(--sand-02-color);
+}
+ .sand-03 {
+	 fill: var(--sand-03-color);
+}
+ .sand-04 {
+	 fill: var(--sand-04-color);
+}
+ .moonlight {
+	 opacity: 0;
+}
+ .rings .shadow-01, .rings .shadow-02 {
+	 opacity: 0.08;
+}
+/* all the fill transitions */
+ .circle-bg, .color-fade-transition {
+	 transition: fill var(--t-slow) linear var(--t-delay-colorfades);
+}
+/* stars transition */
+ .star {
+	 fill: var(--star-color);
+	 opacity: 0;
+	 transition: opacity var(--t-fast) linear var(--t-delay-colorfades);
+}
+/* Here we go, transition the scene colors on :hover, using the CSS vars to reset the colors for every one that gets a transition */
+ .transition-scene:hover {
+	/* recolor me tonight */
+	 --circle-bg-color: #6955af;
+	 --cactus-body-color: #4e265f;
+	 --cactus-flower-color: #a877c5;
+	 --mountain-color: #803c7e;
+	 --sand-01-color: #572966;
+	 --sand-02-color: #6a307e;
+	 --sand-03-color: #6e2f83;
+	 --sand-04-color: #7f3d99;
+	/* stars transition */
+}
+ .transition-scene:hover .color-fade-transition {
+	 transition: fill var(--t-fast) linear var(--t-delay-colorfades);
+}
+ .transition-scene:hover .star {
+	 opacity: 1;
+	 transition: opacity var(--t-fast) linear;
+}
+/* Motion transitions for people who did not set reduced motion to reduce */
+ @media (prefers-reduced-motion: no-preference) {
+	 .sun {
+		 offset-path: path("M107.35,727.94A304.79,304.79,0,0,1-20,739.51a319.27,319.27,0,0,1-119.14-39.12A340.8,340.8,0,0,1-237,617.77a357.93,357.93,0,0,1-78.3-252.49,339.85,339.85,0,0,1,34-123.49,319.66,319.66,0,0,1,76.1-99.66A305.13,305.13,0,0,1-93.67,79.61,304.64,304.64,0,0,1,33.69,68a319.87,319.87,0,0,1,119.15,39.13,339.85,339.85,0,0,1,97.86,82.61A353.53,353.53,0,0,1,314,308.54a353.48,353.48,0,0,1,15,133.73A339.93,339.93,0,0,1,295,565.75a320.39,320.39,0,0,1-76.11,99.71,305.23,305.23,0,0,1-111.58,62.48m.24.77C277.76,676,370.59,487.7,315,308.25S76.25,26.08-93.91,78.84s-263,241-207.35,420.47,238.69,282.16,408.85,229.4Z");
+		 offset-distance: 32%;
+		 transform-origin: 208px 103px;
+		 transition: offset-distance var(--t-med) cubic-bezier(0.215, 0.61, 0.355, 1) var(--t-delay-motionpath);
+		/* easeOutCubic */
+	}
+	 .cloud {
+		 opacity: 0.7;
+		 transition: transform var(--t-med) cubic-bezier(0.215, 0.61, 0.355, 1) var(--t-delay-motionpath);
+		/* easeOutCubic */
+	}
+	 .moonlight {
+		 offset-path: path("M675,101.23a304.55,304.55,0,0,1,98.23,81.88A319.33,319.33,0,0,1,829.83,295a341.1,341.1,0,0,1,10.78,127.62,357.92,357.92,0,0,1-123.18,233.9A339.81,339.81,0,0,1,606.1,719.84,319.59,319.59,0,0,1,481.81,736.5,306.56,306.56,0,0,1,260.48,619.93,319.71,319.71,0,0,1,203.89,508,339.94,339.94,0,0,1,193.11,380.4,358,358,0,0,1,316.29,146.51,340.05,340.05,0,0,1,427.61,83.2,320.47,320.47,0,0,1,551.93,66.51,305.23,305.23,0,0,1,675,101.23m.38-.71C517.75,17.5,319,85,231.45,251.21s-30.74,368.3,126.89,451.32,356.39,15.54,443.94-150.7S833,183.53,675.39,100.52Z");
+		 offset-distance: 23%;
+		 transform-origin: 260px 430px;
+		 transition: all var(--t-fast) cubic-bezier(0.55, 0.055, 0.675, 0.19);
+		/* easeInCubic */
+	}
+	 .transition-scene:hover {
+		/* the motion path transitions */
+	}
+	 .transition-scene:hover .sun {
+		 offset-distance: 43%;
+		 transition: offset-distance var(--t-fast) cubic-bezier(0.55, 0.055, 0.675, 0.19);
+		/* easeInCubic */
+	}
+	 .transition-scene:hover .cloud {
+		 transform: translateX(250px);
+		 transition: transform var(--t-fast) cubic-bezier(0.55, 0.055, 0.675, 0.19);
+		/* easeInCubic */
+	}
+	 .transition-scene:hover .moonlight {
+		 opacity: 1;
+		 offset-distance: 39%;
+		 transition: offset-distance var(--t-med) cubic-bezier(0.215, 0.61, 0.355, 1) var(--t-delay-motionpath);
+		/* easeOutCubic */
+	}
+}
+/* Let's have cool color transitions for people who do not want motion instead :) */
+ @media (prefers-reduced-motion: reduce) {
+	/* Smooth color transition */
+	 .sun {
+		 opacity: 1;
+	}
+	 .cloud {
+		 opacity: 0.7;
+	}
+	 .sun, .cloud {
+		 transition: opacity var(--t-slow) linear var(--t-delay-motionpath);
+	}
+	 .moonlight {
+		 transform: translate(-3%, -62%);
+		 transition: opacity var(--t-fast) linear;
+	}
+	 .transition-scene:hover .sun, .transition-scene:hover .cloud {
+		 opacity: 0;
+	}
+	 .transition-scene:hover .sun, .transition-scene:hover .cloud {
+		 transition: opacity var(--t-fast) linear;
+	}
+	 .transition-scene:hover .moonlight {
+		 opacity: 1;
+		 transition: opacity var(--t-slow) linear var(--t-delay-motionpath);
+	}
+}
+/* Let"s have some comets raining from the sky */
+ .svg-defs {
+	 display: none;
+}
+ .comet-rain {
+	 z-index: -1;
+	 position: absolute;
+	 width: 100vw;
+	 height: 100vh;
+}
+ .comet-instance {
+	 height: auto;
+	 position: absolute;
+	 z-index: -1;
+	 right: -10vw;
+	 top: -10vh;
+	 fill: url(#gradient);
+}
+ .comet-01, .comet-03, .comet-04, .comet-06 {
+	 width: 5vmin;
+	 transform: scale(0);
+}
+ .comet-02, .comet-05 {
+	 width: 6vmin;
+	 transform: scale(0);
+}
+ @media (prefers-reduced-motion: no-preference) {
+	 .comet-instance {
+		 animation: MakeItRain 10s infinite;
+	}
+	 .comet-01 {
+		 right: 30vw;
+		 animation-delay: 0ms;
+	}
+	 .comet-02 {
+		 right: 57vw;
+		 animation-delay: 9s;
+	}
+	 .comet-03 {
+		 right: 83vw;
+		 animation-delay: 6s;
+	}
+	 .comet-04 {
+		 top: 13vh;
+		 animation-delay: 22s;
+	}
+	 .comet-05 {
+		 top: 34vh;
+		 animation-delay: 5s;
+	}
+	 .comet-06 {
+		 top: 67vh;
+		 animation-delay: 14s;
+	}
+	 @keyframes MakeItRain {
+		 0% {
+			 opacity: 0;
+			 transform: scale(0) translate(0, 0);
+		}
+		 70% {
+			 opacity: 0.4;
+			 transform: scale(0.4) translate(0, 0);
+		}
+		 100% {
+			 opacity: 1;
+			 transform: scale(1) translate(-101vw, 101vh);
+		}
+	}
+}
+/* Layout */
+ body {
+	 font-family: "Raleway", sans-serif;
+	 position: relative;
+	 overflow: hidden;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 height: 100vh;
+	 padding: 0 6em;
+}
+ .container {
+	 position: relative;
+	 z-index: 100;
+	 padding: 0 2em;
+	 flex-basis: 50%;
+}
+ svg.animation-scene, svg.transition-scene {
+	 margin: 3em auto;
+	 z-index: 1;
+}
+ svg.transition-scene {
+	 display: block;
+}
+/* Utilities and pen background */
+ html {
+	 background: var(--dark-cosmos-color);
+	 color: var(--dark-cosmos-color);
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 20px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #000;
+  box-shadow: 0 0 0 0 #0004;
+  animation: l2 1.5s infinite linear;
+  position: relative;
+}
+.loader:before,
+.loader:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: 0 0 0 0 #0004;
+  animation: inherit;
+  animation-delay: -0.5s;
+}
+.loader:after {
+  animation-delay: -1s;
+}
+@keyframes l2 {
+    100% {box-shadow: 0 0 0 40px #0000}
+}

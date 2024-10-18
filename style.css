@@ -1,0 +1,209 @@
+/* Base CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f4f4f4;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+ul {
+  list-style: none;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+/* Header - big header  */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+header p {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+/* Parallax that engages on scroll showing  h1 and h2 titles with img with id "foreground" in front of an image with id "background"; h1 and h2 elements move the fastest because they are closer to the viewer, foreground moving bit slower and background is the furthest away so its mobing slowest*/
+/* assets/css/style.css */
+.parallax {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  perspective: 1px;
+}
+
+.parallax .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translateZ(-1px) scale(2);
+}
+
+.parallax .foreground {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  top: 200px;
+  z-index: 1;
+  transform: translateY(-800px) translateZ(-2px) scale(1.5);
+}
+
+.parallax h1 {
+  position: relative;
+  z-index: 2;
+  transform: translateZ(-3px) scale(1.25);
+  font-family: fantasy;
+  color: #fff;
+  font-size: 6rem;
+  text-shadow: 2px 2px 2px #000;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  padding: 40px;
+  transform: translateZ(-1px) scale(2);
+}
+.parallax h2 {
+  position: relative;
+  z-index: 2;
+  transform: translateZ(-4px) scale(1.05);
+  font-family: fantasy;
+  color: #fff;
+  font-size: 4rem;
+  text-shadow: 2px 2px 2px #000;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  padding: 20px;
+  transform: translateZ(-1px) scale(2);
+}
+/* Section - padding, margin, background color, text color, text align, font size, line height */
+section {
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+section h2 {
+  margin-bottom: 10px;
+}
+section p {
+  margin-bottom: 20px;
+}
+/* Navigation - horizontal fixed-top navbar with intersting font and colors and different hover and click animations on links*/
+nav {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+nav a {
+  color: #fff;
+  font-size: 1.25rem;
+  padding: 10px 15px;
+  display: inline-block;
+}
+nav a:hover {
+  background-color: #555;
+}
+nav a.active {
+  background-color: #555;
+}
+/* Footer - fixed bottom footer with interesting font and colors */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Hero section */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+  transition: transform 0.1s ease-out;
+  z-index: -1;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 1200px;
+  z-index: 1;
+}
+
+.hero-image img {
+  width: 300px;
+  border-radius: 50%;
+}
+
+.hero-text {
+  max-width: 600px;
+  margin-left: 50px;
+}
+
+.section-title span {
+  color: #ff6f61;
+}
+
+.call-to-action .button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff6f61;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}

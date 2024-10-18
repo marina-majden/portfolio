@@ -1,0 +1,256 @@
+.character,
+.face,
+.hair,
+.nose,
+.ear,
+.neck,
+.body,
+.group,
+.fringe,
+.eye,
+.profile-card,
+.yes,
+.no,
+.info,
+.tongue,
+.profile-wrap,
+.name,
+.mouth,
+.eyebrow,
+.blush {
+  position: absolute;
+}
+
+.container {
+  background: #ebd8d0;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+}
+
+.profile {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border: 2px solid #fff;
+  overflow: hidden;
+  background: #e8e9eb;
+}
+
+.group {
+  left: -7px;
+}
+
+.face {
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  z-index: 20;
+  top: 50px;
+  left: 70px;
+  width: 80px;
+  height: 100px;
+  background: #f0beaf;
+}
+
+.hair {
+  z-index: 3;
+  top: 30px;
+  left: 50px;
+  width: 120px;
+  height: 200px;
+  border-radius: 100px 100px 0 0;
+  background: #424b54;
+}
+.hair:before, .hair:after {
+  position: absolute;
+  content: "";
+}
+.ear {
+  z-index: 4;
+  top: 86px;
+  left: 61px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  background: #f0beaf;
+  display: none;
+}
+.ear:before {
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  background: #ed8a80;
+}
+
+.ear.right {
+  left: 130px;
+}
+
+.fringe {
+  z-index: 99;
+  top: 53px;
+  left: 95px;
+  width: 69px;
+  height: 35px;
+  background: #424b54;
+  border-radius: 0 0 100px 100px;
+  transform: rotate(30deg);
+}
+.fringe:before {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: -24px;
+  width: 57px;
+  height: 50px;
+  background: #424b54;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  transform: rotate(10deg);
+}
+
+.eyebrow {
+  z-index: 300;
+  top: 95px;
+  left: 78px;
+  width: 12px;
+  height: 2px;
+  background: #646b73;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+}
+.eyebrow:before {
+  position: absolute;
+  content: "";
+  left: 50px;
+  width: 12px;
+  height: 2px;
+  background: #646b73;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+}
+
+.eye {
+  z-index: 30;
+  top: 100px;
+  left: 80px;
+  width: 10px;
+  height: 10px;
+  background: #424b54;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+}
+.eye:before {
+  position: absolute;
+  content: "";
+  left: 50px;
+  width: 10px;
+  height: 10px;
+  background: #424b54;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+}
+
+.blush {
+  z-index: 999;
+  top: 116px;
+  left: 77px;
+  width: 10px;
+  height: 7px;
+  background: #e3879e;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  opacity: 0.4;
+}
+.blush:before {
+  position: absolute;
+  content: "";
+  left: 58px;
+  width: 10px;
+  height: 7px;
+  background: #e3879e;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+}
+
+.nose {
+  z-index: 20;
+  top: 100px;
+  left: 107px;
+  width: 8px;
+  height: 14px;
+  background: #db9b99;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+}
+
+.mouth {
+  z-index: 20;
+  top: 120px;
+  left: 97px;
+  width: 30px;
+  height: 15px;
+  border-radius: 0 0 100px 100px;
+  background: #424b54;
+  overflow: hidden;
+}
+
+.tongue {
+  top: 5px;
+  left: 8px;
+  width: 30px;
+  height: 20px;
+  background: #f6828c;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+}
+
+.neck {
+  z-index: 13;
+  width: 30px;
+  height: 30px;
+  background: #f0beaf;
+  top: 130px;
+  left: 97px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+}
+
+.body {
+  z-index: 10;
+  top: 150px;
+  left: 60px;
+  width: 100px;
+  height: 150px;
+  background: #e3879e;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+}/*# sourceMappingURL=girl.css.map */

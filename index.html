@@ -3,190 +3,446 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      @keyframes animate-columns {
-        0% {
-          grid-template-columns: 17vmin 8vmin 5vmin 7vmin 10vmin 15vmin 15vmin;
-          grid-template-rows: 4vmin 9vmin 15vmin 7vmin 13vmin 8vmin 5vmin;
-        }
-        25% {
-          grid-template-columns: 10vmin 8vmin 15vmin 5vmin 7vmin 15vmin 17vmin;
-          grid-template-rows: 15vmin 4vmin 7vmin 8vmin 5vmin 13vmin 9vmin;
-        }
-        50% {
-          grid-template-columns: 15vmin 10vmin 17vmin 5vmin 7vmin 15vmin 8vmin;
-          grid-template-rows: 4vmin 9vmin 5vmin 13vmin 7vmin 8vmin 15vmin;
-        }
-        75% {
-          grid-template-columns: 8vmin 5vmin 7vmin 15vmin 17vmin 15vmin 10vmin;
-          grid-template-rows: 13vmin 4vmin 15vmin 9vmin 5vmin 7vmin 8vmin;
-        }
-        100% {
-          grid-template-columns: 10vmin 8vmin 5vmin 7vmin 15vmin 15vmin 17vmin;
-          grid-template-rows: 4vmin 15vmin 9vmin 7vmin 8vmin 5vmin 13vmin;
-        }
-      }
+    <title>Marina Majdenić Portfolio Website</title>
+    <!-- CDN for icons and bulma library -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css"
+    />
 
-      .grid {
-        display: grid;
-        gap: 2vmin;
-        padding: 2vmin;
-        grid-template-columns: 17vmin 8vmin 5vmin 7vmin 10vmin 15vmin 15vmin;
-        grid-template-rows: 4vmin 9vmin 15vmin 7vmin 13vmin 8vmin 5vmin;
-        align-items: stretch;
-        justify-items: stretch;
-        background: #333;
-
-        animation: animate-columns 30s ease-in-out infinite alternate;
-      }
-
-      .grid > * {
-        width: 100%;
-        background: rgb(0 0 0);
-
-        --light1: #e5eeeb;
-        --light2: #f2e7d5;
-        --light3: #fcfde7;
-        --light4: #dfe5d0;
-        --light5: #e3ded9;
-        --yellow1: #f2c968;
-        --yellow2: #edcc6b;
-        --red1: #d62d24;
-        --red2: #d73630;
-        --dark1: #130409;
-        --dark2: #0b0205;
-        --dark3: #c0bfba;
-        --blue: #241785;
-      }
-
-      .grid > :nth-child(1n) {
-        background: var(--light1);
-      }
-      .grid > :nth-child(2n) {
-        background: var(--light2);
-      }
-      .grid > :nth-child(3n) {
-        background: var(--yellow1);
-      }
-      .grid > :nth-child(4n) {
-        background: var(--light5);
-      }
-
-      .grid > :nth-child(1) {
-        background: var(--red1);
-      }
-      .grid > :nth-child(2) {
-        grid-column: span 2;
-        background: var(--light3);
-      }
-      .grid > :nth-child(5) {
-        grid-column: span 2;
-        grid-row: span 3;
-        background: var(--yellow1);
-      }
-      .grid > :nth-child(9),
-      .grid > :nth-child(13) {
-        grid-row: span 2;
-        background: var(--yellow2);
-      }
-      .grid > :nth-child(7) {
-        grid-column: span 3;
-        grid-row: span 2;
-        background: var(--blue);
-      }
-      .grid > :nth-child(8) {
-        background: var(--dark3);
-      }
-      .grid > :nth-child(9) {
-        background: var(--light5);
-      }
-      .grid > :nth-child(10) {
-        grid-column: span 3;
-        grid-row: span 4;
-        background: var(--light1);
-      }
-      .grid > :nth-child(12),
-      .grid > :nth-child(17) {
-        grid-row: span 2;
-      }
-      .grid > :nth-child(14),
-      .grid > :nth-child(6) {
-        grid-row: span 3;
-        background: var(--light3);
-      }
-      .grid > :nth-child(16) {
-        background: var(--red2);
-      }
-      .grid > :nth-child(18) {
-        background: var(--dark1);
-      }
-
-      html,
-      body {
-        height: 100%;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        background: #fcfcfc;
-      }
-
-      body {
-        display: grid;
-        place-content: center;
-        text-align: center;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-          "Segoe UI Symbol";
-      }
-
-      .warning {
-        display: none;
-      }
-    </style>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Animated Mondrian</h1>
-    <div class="grid">
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
-      <div class="cell"></div>
+    <!-- Full height parallax header -->
+    <div class="parallax" id="parallax">
+      <img
+        src="assets/img/sci-fi-city-3.jpg"
+        class="background"
+        id="background"
+      />
+      <img
+        src="assets/img/woman-sci-fi-office.png"
+        class="foreground"
+        id="foreground"
+      />
+      <h1>Hello, world!</h1>
+      <br />
+      <h2>WELCOME TO MY SITE!</h2>
     </div>
-    <div class="warning">
-      <p>
-        ℹ️ You are using Chrome but need at least version 107 to check this demo
-      </p>
-    </div>
-    <script>
-      const showWarningInChromiumWithNoSupport = () => {
-        if (!navigator.userAgentData || !navigator.userAgentData.brands) return;
-
-        const chromium = navigator.userAgentData.brands.filter(
-          (b) => b.brand == "Chromium"
-        );
-        if (!chromium) return;
-
-        if (chromium[0].version >= 107) return;
-        document.querySelector(".warning").style.display = "block";
-      };
-
-      showWarningInChromiumWithNoSupport();
-    </script>
+    <!-- Navbar -->
+    <nav
+      class="navbar is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <a class="navbar-item" href="#home">
+          <img src="assets/img/logo.png" alt="logo" />
+        </a>
+        <a
+          role="button"
+          class="navbar-burger burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="#home">Home</a>
+          <a class="navbar-item" href="#hero">About</a>
+          <a class="navbar-item" href="#skills">Skills</a>
+          <a class="navbar-item" href="#projects">Projects</a>
+          <a class="navbar-item" href="#contact">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Main -->
+    <main>
+      <section class="hero">
+        <div class="hero-background" id="hero-background"></div>
+        <div class="hero-content">
+          <div class="hero-image">
+            <img src="assets/img/profile-pic.png" alt="hero-image" />
+          </div>
+          <div class="hero-text">
+            <h2 class="section-title">
+              I'm <span>Marina Majdenić</span>, Frontend developer from Zagreb,
+              Croatia.
+            </h2>
+            <p class="text">
+              I'm a front-end developer with a passion for creating refined
+              user-friendly web experiences with a focus on animated,
+              responsive, and interactive content. I'm currently looking for new
+              opportunities to work on exciting projects. I have experience in
+              developing web applications using HTML, CSS, JavaScript, and
+              React. I'm also familiar with Node.js, Express, and MongoDB. I'm a
+              quick learner and I'm always looking to improve my skills and
+              learn new technologies.
+            </p>
+            <div class="call-to-action">
+              <p class="call-to-action">
+                If you need a developer for your project, or you need a new
+                developer on your IT team, feel free to contact me.
+              </p>
+              <a href="#contact" class="button">Contact me</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="skills-carousel" id="skills-carousel">
+        <div class="carousel-container">
+          <div class="carousel">
+            <div class="carousel-item" data-skill="web-design">
+              <h3 class="title">Web Design</h3>
+              <svg
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="100"
+                height="100"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                id="feather-monitor"
+              >
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <div class="carousel-item" data-skill="web-development">
+              <h3 class="title">Web Development</h3>
+              <svg
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="100"
+                height="100"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                id="feather-code"
+              >
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </div>
+            <div class="carousel-item" data-skill="responsive-design">
+              <h3 class="title">Responsive Design</h3>
+              <svg
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="100"
+                height="100"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                id="feather-tablet"
+              >
+                <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+                <line x1="12" y1="18" x2="12" y2="18"></line>
+              </svg>
+          </div>
+            <div class="carousel-item" data-skill="animation">
+                <h3 class="title">Animation</h3>
+                <svg
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="100"
+                height="100"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                id="feather-activity"
+                >
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                </svg>
+            </div>
+            <div class="carousel-item" data-skill="3d-graphics">
+                <h3 class="title">3D Graphics</h3>
+                <svg
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="100"
+                height="100"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                id="feather-cube"
+                >
+                <polygon points="17 2 12 6 7 2 7 8 12 12 17 8 17 2"></polygon>
+                <polygon points="17 16 12 20 7 16 7 22 12 26 17 22 17 16"></polygon>
+                <line x1="12" y1="6" x2="12" y2="20"></line>
+                </svg>
+            </div>
+            <div class="carousel-item" data-skill="progressive-web-applications">
+                <h3 class="title">Progressive web applications</h3>
+                <svg
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="100"
+                height="100"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                id="feather-smartphone"
+                >
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                <line x1="12" y1="18" x2="12" y2="18"></line>
+                </svg>
+            </div>
+            <div class="carousel-item" data-skill="web-maintenance">
+                <h3 class="title">Web maintenance</h3>
+                <svg
+                class="icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="100"
+                height="100"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                id="feather-settings"
+                >
+                <circle cx="12" cy="12" r="3"></circle>
+                <path d="M9.09 3.46a10 10 0 0 1 2.83 0"></path>
+                <path d="M21 12a9.77 9.77 0 0 1-2.67 6.73"></path>
+                <path d="M14.57 21.54a10 10 0 0 1-5.14 0"></path>
+                <line x1="12" y1="5" x2="12" y2="3"></line>
+                <line x1="12" y1="21" x2="12" y2="19"></line>
+                <line x1="4.22" y1="3.16" x2="5.64" y2="4.58"></line>
+                <line x1="18.36" y1="19.78" x2="19.78" y2="18.36"></line>
+                <line x1="1.5" y1="12" x2="3" y2="12"></line>
+                <line x1="21" y1="12" x2="22.5" y2="12"></line>
+                <line x1="4.22" y1="20.84" x2="5.64" y2="19.42"></line>
+                <line x1="18.36" y1="4.22" x2="19.78" y2="5.64"></line>
+                </svg>
+            </div>
+            </div>
+        </div>
+        <div class="skill-description" id="skill-description">
+          <p class="text"></p>
+        </div>
+       
+      </section>
+      
+      <section class="projects" id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects container" id="projectContainer">
+          <div class="project">
+            <img src="assets/img/project-1.jpg" alt="project-1" />
+            <h3>Project 1</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              nec purus nec.
+            </p>
+          </div>
+          <div class="project">
+            <img src="assets/img/project-2.jpg" alt="project-2" />
+            <h3>Project 2</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              nec purus nec.
+            </p>
+          </div>
+          <div class="project">
+            <img src="assets/img/project-3.jpg" alt="project-3" />
+            <h3>Project 3</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              nec purus nec.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="services" id="services">
+        <h2 class="section-title">Services</h2>
+        <div class="services-container" id="servicesContainer">
+          <div class="service">
+            <i class="fa fa-pencil"></i>
+            <h3>Web Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              nec purus nec.
+            </p>
+            <div class="gallery" id="gallery-1">
+              <img
+                src="assets/img/chatroom-horizontal.png"
+                alt="serv11"
+                id="serv11"
+              />
+              <img src="assets/img/quiz-app.png" alt="serv12" id="serv12" />
+              <img src="assets/img/song-finder.png" alt="serv13" id="serv13" />
+            </div>
+          </div>
+          <div class="service">
+            <i class="fa fa-code"></i>
+            <h3>Web Development</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              nec purus nec.
+            </p>
+            <div class="gallery" id="gallery-2">
+              <img
+                src="assets/img/chatroom-horizontal.png"
+                alt="serv11"
+                id="serv21"
+              />
+              <img src="assets/img/quiz-app.png" alt="serv12" id="serv22" />
+              <img src="assets/img/song-finder.png" alt="serv13" id="serv23" />
+            </div>
+          </div>
+          <div class="service">
+            <i class="fa fa-mobile"></i>
+            <h3>Responsive Design</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+              nec purus nec.
+            </p>
+            <div class="gallery" id="gallery-3">
+              <img
+                src="assets/img/chatroom-horizontal.png"
+                alt="serv11"
+                id="serv31"
+              />
+              <img src="assets/img/quiz-app.png" alt="serv12" id="serv32" />
+              <img src="assets/img/song-finder.png" alt="serv13" id="serv33" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-container">
+          <form action="submit" id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message"></textarea>
+            </div>
+            <!-- Checkbox for accepting the use of user data needed for enabling sending the form with a description why is it needed -->
+            <div class="form-group">
+              <input type="checkbox" id="accept" name="accept" />
+              <label for="accept"
+                >I accept that my data will be used for the purpose of
+                contacting me.</label
+              >
+            </div>
+            <button type="submit" class="button">Send</button>
+          </form>
+        </div>
+      </section>
+      <section class="playground">
+        <!-- This section serves as a way to demonstrate my designing and animation skills, will be designed as a bento grid, full-width, with little animations in some of the boxes, and their names in adjacent boxes. Graphics and animations will be made with Three.js, GSAP, HTML, CSS and JavaScript -->
+        <h2 class="section-title">Playground</h2>
+        <div class="playground-container">
+          <div class="bento-grid">
+            <div class="bento-box">
+              <div class="bento-box-content">
+                <h3>Box 1</h3>
+              </div>
+            </div>
+            <div class="bento-box">
+              <div class="bento-box-content">
+                <h3>Box 2</h3>
+              </div>
+            </div>
+            <div class="bento-box">
+              <div class="bento-box-content">
+                <h3>Box 3</h3>
+              </div>
+            </div>
+            <div class="bento-box">
+              <div class="bento-box-content">
+                <h3>Box 4</h3>
+              </div>
+            </div>
+            <div class="bento-box">
+              <div class="bento-box-content">
+                <h3>Box 5</h3>
+              </div>
+            </div>
+            <div class="bento-box">
+              <div class="bento-box-content">
+                <h3>Box 6</h3>
+              </div>
+            </div>
+            <div class="bento-box">
+              <div class="bento-box-content">
+                <h3>Box 7</h3>
+              </div>
+            </div>
+            <div class="bento-box">
+              <div class="bento-box-content">
+                <h3>Box 8</h3>
+              </div>
+            </div>
+            <div class="bento-box">
+              <div class="bento-box-content">
+                <h3>Box 9</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-content">
+          <p>&copy; 2021 Marina Majdenić</p>
+          <div class="social-media">
+            <a href="https://www.linkedin.com/in/marinamajdenic/"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+            <a href="" target="_blank"><i class="fa fa-github"></i> </a>
+            <a href="https://codepen.io/marinamajdenic"
+              ><i class="fa fa-codepen"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- JavaScript -->
+    <!-- CDN for GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <!-- CDN for Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

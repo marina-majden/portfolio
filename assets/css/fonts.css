@@ -2,28 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee&family=Yanone+Kaffeesatz:wght@200;300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap");
 
-/* =============== VARIABLES =============== */
-:root {
-  --font-text-1: "Nunito Sans", fantasy;
-  --font-2: "Rock Salt", cursive;
-  --font-3: "Silkscreen", fantasy;
-  --font-4: "Bungee", fantasy;
-  --font-head-4: "Yanone Kaffeesatz", fantasy;
-  --font-text-3: "Roboto", fantasy;
-  --font-7: "Pricedown", fantasy;
-  --font-8: "Bespoke", fantasy;
-  --font-9: "Funtauna", fantasy;
-  --font-text-2: "Dosis", fantasy;
-  --font-11: "Drexs", fantasy;
-  --font-text-4: "Fira Code", fantasy;
-  --font-13: "Fira Code VF", fantasy;
-  --font-14: "Poppins", fantasy;
-  --font-head-2: "Queensides", fantasy;
-  --font-head-3: "Kalnia VF", fantasy;
-  --font-17: "Newsreader", fantasy;
-  --font-head-1: "Syne", fantasy;
-}
-
 /* =============== FONTS =============== */
 
 @font-face {
@@ -246,17 +224,106 @@
 }
 @font-face {
   font-family: "Kalnia VF";
-  src: url(/assets/fonts/Kalnia-VariableFont_wdth\,wght.ttf) format("truetype");
+  src: url(/assets/fonts/Kalnia-VariableFont.ttf) format("truetype");
   font-weight: 1 1000;
 }
 @font-face {
   font-family: "Newsreader";
-  src: url(/assets/fonts/Newsreader-VariableFont_opsz\,wght.ttf)
-    format("truetype");
+  src: url(/assets/fonts/Newsreader-Variable.ttf) format("truetype");
   font-weight: 1 1000;
 }
 @font-face {
   font-family: "Syne";
-  src: url(/assets/fonts/Syne-VariableFont_wght.ttf) format("truetype");
+  src: url(/assets/fonts/Syne-VariableFont.ttf) format("truetype");
   font-weight: 1 1000;
+}
+@font-face {
+  font-family: "Yanone Kaffeesatz";
+  src: url(/assets/fonts/Yanone/YanoneKaffeesatz-Thin.otf) format("opentype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Yanone Kaffeesatz";
+  src: url(/assets/fonts/Yanone/YanoneKaffeesatz-Light.ttf) format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Yanone Kaffeesatz";
+  src: url(/assets/fonts/Yanone/YanoneKaffeesatz-Regular.otf) format("opentype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Yanone Kaffeesatz";
+  src: url(/assets/fonts/Yanone/YanoneKaffeesatz-Bold.ttf) format("truetype");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Westmeath";
+  src: url(/assets/fonts/Westmeath.ttf) format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Pecita";
+  src: url(/assets/fonts/Pecita.otf) format("opentype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Sacramento";
+  src: url(/assets/fonts/Sacramento-Regular.ttf) format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Pharmacy";
+  src: url(/assets/fonts/PHARMACY.ttf) format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Monofonto";
+  src: url(/assets/fonts/monofonto.otf) format("opentype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Piximisa";
+  src: url(/assets/fonts/Piximisa.ttf) format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Townscape";
+  src: url(/assets/fonts/Townscape.ttf) format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Xplor";
+  src: url(/assets/fonts/Xplor.otf) format("opentype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Kingthings";
+  src: url(/assets/fonts/Kingthings.ttf) format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "LouisGeorge";
+  src: url(/assets/fonts/LouisGeorgeCafe.ttf) format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "LouisGeorge";
+  src: url(/assets/fonts/LouisGeorgeCafeLight.ttf) format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Oliver";
+  src: url(/assets/fonts/Oliver.ttf) format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Quota";
+  src: url(/assets/fonts/Quota.otf) format("opentype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Palamecia";
+  src: url(/assets/fonts/PalameciaTitling.otf) format("opentype");
+  font-weight: 500;
 }

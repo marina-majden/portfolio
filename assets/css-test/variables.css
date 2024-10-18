@@ -1,0 +1,159 @@
+:root,
+[color-scheme="light"] {
+  /* RAINBOW - BASIC PALETTE*/
+  --blue: #1ba2f6;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #ea3999;
+  --red: #e44c55;
+  --orange: #f1b633;
+  --yellow: #ffc107;
+  --green: #3cf281;
+  --teal: #3f81a2;
+  --cyan: #32fbe2;
+  /* GREYS - B&W PALETTE*/
+  --black: #000;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --gray-100: #f8f9fa;
+  --gray-200: #e9ecef;
+  --gray-300: #dee2e6;
+  --gray-400: #ced4da;
+  --gray-500: #adb5bd;
+  --gray-600: #6c757d;
+  --gray-700: #495057;
+  --gray-800: #343a40;
+  --gray-900: #170229;
+  /* SEMANTIC INFO COLORS */
+  --primary: #6f42c1;
+  --secondary: #ea39b8;
+  --success: #3cf281;
+  --info: #1ba299;
+  --warning: #ffc107;
+  --danger: #e44c55;
+  --light: #44d9e8;
+  /* SEAMANTIC COLORS FOR TXT */
+  --primary-text-emphasis: #2c1a4d;
+  --secondary-text-emphasis: #5e174a;
+  --success-text-emphasis: #186134;
+  --info-text-emphasis: #0b4162;
+  --warning-text-emphasis: #664d03;
+  --danger-text-emphasis: #5b1e22;
+  --light-text-emphasis: #495057;
+  --dark-text-emphasis: #495057;
+  /* SEAMANTIC COLORS FOR BGS OR BORDERS */
+  --primary-bg-subtle: #e2d9f3;
+  --secondary-bg-subtle: #fbd7f1;
+  --success-bg-subtle: #d8fce6;
+  --info-bg-subtle: #d1ecfd;
+  --warning-bg-subtle: #fff3cd;
+  --danger-bg-subtle: #fadbdd;
+  --light-bg-subtle: #fcfcfd;
+  --dark-bg-subtle: #ced4da;
+  /* 	THEME VALUES / UTIL CLASSES*/
+  --body-color: #01010e;
+  --body-color-hsl: hsl(240, 87%, 3%);
+  --body-bg: #f3f4f4;
+  --body-bg-hsl: hsl(180, 4%, 95%);
+  --secondary-bg: #e9ecef;
+  --tertiary-bg: #f8f9fa;
+  --emphasis-color: #272eb5;
+  --emphasis-color-light: #3740ff;
+  --emphasis-color-c-light: #e8f0fe;
+  --accent-color: rgb(88, 206, 192);
+  --secondary-accent-color: rgb(73, 64, 117);
+  --link-color: #32fbe2;
+  --link-decoration: underline;
+  --link-hover-color: #28c9b5;
+  --code-color: #ea39b8;
+  --highlight-color: #32fbe2;
+  --highlight-bg: #fff3cd;
+  --border-width: 0;
+  --border-style: solid;
+  --border-color: #dee2e6;
+  --border-color-translucent: rgba(0, 0, 0, 0.175);
+  --form-valid-color: #3cf281;
+  --form-valid-border-color: #3cf281;
+  --form-invalid-color: #e44c55;
+  --form-invalid-border-color: #e44c55;
+  --dark: #170229;
+  --color-primary: #01010e;
+  --color-primary-dark: #272eb5;
+  --color-primary-light: #3740ff;
+  --color-primary-x-light: #e8f0fe;
+  --color-light: #ffffff;
+  --color-dark: #202124;
+  --color-off-white: #f3f4f4;
+  --color-mid: #5f6368;
+  --color-mid-dark: #3c4043;
+  --color-stroke: #dadce0;
+}
+[color-scheme="dark"] {
+  /*color-scheme: dark; */
+  --body-color: #dee2e6;
+  --body-bg: #170229;
+  --emphasis-color: #fff;
+  --secondary-color: #020a13bf;
+  --secondary-bg: #343a40;
+  --tertiary-color: rgba(222, 226, 230, 0.5);
+  --tertiary-bg: #261e35;
+  --primary-text-emphasis: #a98eda;
+  --secondary-text-emphasis: #f288d4;
+  --success-text-emphasis: #8af7b3;
+  --info-text-emphasis: #76c7fa;
+  --warning-text-emphasis: #ffda6a;
+  --danger-text-emphasis: #ef9499;
+  --light-text-emphasis: #f8f9fa;
+  --dark-text-emphasis: #dee2e6;
+  --brimary-bg-subtle: #160d27;
+  --secondary-bg-subtle: #2f0b25;
+  --success-bg-subtle: #0c301a;
+  --info-bg-subtle: #052031;
+  --warning-bg-subtle: #332701;
+  --danger-bg-subtle: #2e0f11;
+  --light-bg-subtle: #343a40;
+  --dark-bg-subtle: #1a1d20;
+  --primary-border-subtle: #432874;
+  --secondary-border-subtle: #8c226e;
+  --success-border-subtle: #24914d;
+  --info-border-subtle: #106194;
+  --warning-border-subtle: #997404;
+  --danger-border-subtle: #2a1213;
+  --light-border-subtle: #495057;
+  --dark-border-subtle: #343a40;
+  --heading-color: inherit;
+  --link-color: #a98eda;
+  --link-hover-color: #baa599;
+  --code-color: #f288d4;
+  --highlight-color: #dee2e6;
+  --highlight-bg: #664d03;
+  --border-color: #495057;
+  --border-color-translucent: rgba(255, 255, 255, 0.15);
+  --form-valid-color: #8af7b3;
+  --form-valid-border-color: #8af7b3;
+  --form-invalid-color: #ef9499;
+  --form-invalid-border-color: #ef9499;
+}
+/* DIMENSIONS AND OTHER VALUES*/
+:root {
+  --metric-gutter: 1.5rem;
+  --metric-box-spacing: 1rem;
+  --metric-radius: 3px;
+  --generic-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3),
+    0px 2px 6px 2px rgba(60, 64, 67, 0.15);
+  --border-radius: 0.15rem;
+  --border-radius-sm: 0.05rem;
+  --border-radius-lg: 0.5rem;
+  --border-radius-xl: 1rem;
+  --border-radius-xxl: 2rem;
+  --border-radius-2xl: var(--bs-border-radius-xxl);
+  --border-radius-pill: 50rem;
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  --box-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  --box-shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  --box-shadow-inset: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+  --focus-ring-width: 0.25rem;
+  --focus-ring-opacity: 0.25;
+  --focus-ring-color: rgba(111, 66, 193, 0.25);
+}
